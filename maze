@@ -1,0 +1,8 @@
+while (notDone()) {
+  if (isPathLeft()) {
+    turnLeft();
+    moveForward();
+  } else {
+    turnRight();
+  }
+}
