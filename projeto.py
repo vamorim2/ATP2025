@@ -133,7 +133,6 @@ def simula(num_medicos, taxa_chegada, tempo_medio, distribuicao, tempo_simulacao
         log(f"Tempo médio de espera: {np.mean(esperas):.2f} min")
         log(f"Tempo máximo de espera: {np.max(esperas):.2f} min")
         log(f"P50 espera: {np.percentile(esperas,50):.2f} min")
-        log(f"P90 espera: {np.percentile(esperas,90):.2f} min")
 
     for m in medicos:
         log(f"{m['id']} ocupado {m['tempo_ocupado']/60:.2f} horas")
@@ -239,5 +238,6 @@ while True:
 
     if event == "Estudo Taxa Chegada":
         estudo_taxa_chegada()
+
 
 window.close()
